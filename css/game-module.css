@@ -1,3 +1,10 @@
+/*==================
+	  General Styles
+==================*/
+
+body, html {
+ 	font-family: "source-sans-pro",sans-serif;
+}
 
 /*==================
 	Color Box Styles
@@ -57,6 +64,8 @@
 	margin: 3px 0.5%;
 	color: #A7A7A7;
 	background: #353535;
+	text-align: center;
+	font-size: 35px;
 }
 
 #startButton {
@@ -109,7 +118,15 @@
 	position: relative;
 	left: 5%;
 	margin-top: 14px;
-	background: #282828;
+	/*background: #282828;*/
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(left,  #000000 0%, #00ff00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(100%,#00ff00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #000000 0%,#00ff00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #000000 0%,#00ff00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #000000 0%,#00ff00 100%); /* IE10+ */
+	background: linear-gradient(to right,  #000000 0%,#00ff00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ff00',GradientType=1 ); /* IE6-9 */	
 }
 
 #blueSliderBox {
@@ -119,13 +136,49 @@
 	position: relative;
 	left: 5%;
 	margin-top: 14px;
-	background: #282828;
+	/*background: #282828;*/
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(left,  #000000 0%, #0000ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(100%,#0000ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #000000 0%,#0000ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #000000 0%,#0000ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #000000 0%,#0000ff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #000000 0%,#0000ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0000ff',GradientType=1 ); /* IE6-9 */	
+}
+
+.slider-info {
+	color: #A7A7A7;
+	font-size: 11px;
+	position: relative;
+	top: -7px;
+	left: 42px;
 }
 
 #hexInputBox {
 
 }
 
-#submitButton {
+/*==================
+	   Slider Tweaks
+==================*/
 
+.color-match-slider {
+	top: -7px;
+	left: -5px;
+}
+
+.color-match-slider span.bar {
+	border-radius: 0;
+	box-shadow: none;
+	background: rgba(21,21,21,0.21);
+}
+
+.color-match-slider span.pointer {
+	width: 21px;
+	height: 42px;
+	top: -18px;
+	background-color: #777;
+	border-radius: 0;
+	border: 0;
 }

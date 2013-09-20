@@ -10,6 +10,10 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 	$scope.userGreenValue = 0;
 	$scope.userBlueValue = 0;
 
+	$scope.redDiff = 0;
+	$scope.greenDiff = 0;
+	$scope.blueDiff = 0;
+
 	$scope.startGame = function(value) {
 
 		// var random = Math.floor((Math.random()*255)+1);
@@ -21,6 +25,9 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 
 	$scope.submitGuess = function() {
 		// console.log('You clicked Submit!');
+		// scope.redDiff = $scope.randomRedValue - $scope.userRedValue;
+		// scope.blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
+		// scope.greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
 		var redDiff = $scope.randomRedValue - $scope.userRedValue;
 		var blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
 		var greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
