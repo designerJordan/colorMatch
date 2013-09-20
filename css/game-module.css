@@ -1,0 +1,131 @@
+
+/*==================
+	Color Box Styles
+==================*/
+
+#colorBox {
+	height: 280px;
+	width: 65%;
+	display: block;
+	position: relative;
+	margin: 14px auto;
+	margin-bottom: 0px;
+	background: #212121;
+	border: 3px solid #424242;
+}
+
+#randomColorBox {
+	height: 94%;
+	width: 49%;
+	display: block;
+	position: relative;
+	top: 3%;
+	left: 1%;
+	background: #996633; /* This will get changed dynamically later */
+}
+
+#userColorBox {
+	height: 94%;
+	width: 49%;
+	display: block;
+	position: relative;
+	top: -91%;
+	left: 50%;
+	background: #336699; /* This will get changed dynamically later */
+}
+
+
+/*==================
+  Buttons Box Styles
+==================*/
+
+#buttonsBox {
+	height: 49px;
+	width: 65%;
+	display: block;
+	position: relative;
+	margin: 7px auto;
+	background: #212121;
+	border: 3px solid #424242;
+}
+
+.button {
+	height: 42px;
+	width: 49%;
+	display: block;
+	position: relative;
+	margin: 3px 0.5%;
+	color: #A7A7A7;
+	background: #353535;
+}
+
+#startButton {
+	float: left;
+}
+
+#submitButton {
+	float: right;
+}
+
+
+/*==================
+	Input Box Styles
+==================*/
+
+#inputBox {
+	height: auto;
+	width: 65%;
+	display: block;
+	position: relative;
+	margin: 14px auto;
+	margin-top: 0px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	background: #212121;
+	border: 3px solid #424242;
+}
+
+#redSliderBox {
+	height: 42px;
+	width: 90%;
+	display: block;
+	position: relative;
+	left: 5%;
+	/*background: #282828;*/
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(left, #000000 0%, #ff0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(100%,#ff0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#ff0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#ff0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #000000 0%,#ff0000 100%); /* IE10+ */
+	background: linear-gradient(to right, #000000 0%,#ff0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 */
+}
+
+#greenSliderBox {
+	height: 42px;
+	width: 90%;
+	display: block;
+	position: relative;
+	left: 5%;
+	margin-top: 14px;
+	background: #282828;
+}
+
+#blueSliderBox {
+	height: 42px;
+	width: 90%;
+	display: block;
+	position: relative;
+	left: 5%;
+	margin-top: 14px;
+	background: #282828;
+}
+
+#hexInputBox {
+
+}
+
+#submitButton {
+
+}

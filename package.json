@@ -1,0 +1,39 @@
+{
+  "name": "REPlayer",
+  "title": "REPlayer",
+  "description": "RealEyes Video Player",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "RealEyes Media",
+    "email": "replayer@realeyes.com",
+    "url": "http://realeyes.com/replayer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git.assembla.com/replayer.replayer.git"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "RealEyes",
+      "url": "/blob/master/LICENSE-RealEyesMedia"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "express": "latest",
+    "requirejs": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-qunit": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt": "latest"
+  },
+  "keywords": []
+}

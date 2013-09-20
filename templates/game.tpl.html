@@ -1,0 +1,33 @@
+<div id="game-module">
+<!-- 	<h1>Color Match</h1> -->
+
+	<div id="colorBox">
+		<div id="randomColorBox" style="background-color:rgb({{randomRedValue}}, {{randomGreenValue}}, {{randomBlueValue}})"></div>
+		<div id="userColorBox" style="background-color:rgb({{userRedValue}}, {{userGreenValue}}, {{userBlueValue}})" ></div>
+	</div>
+
+	<div id="buttonsBox">
+		<div class="button" id="startButton" ng-click="startGame()">START</div>		
+		<div class="button" id="submitButton" ng-click="submitGuess()">SUBMIT</div>		
+	</div>
+
+	<div id="inputBox">
+		<div id="redSliderBox">
+<!-- 			<input type="range" name="redSlider" value="125" min="0" max="255" step="1" ng-bind="userRedValue"> -->
+			<!-- <slider floor="0" ceiling="255"></slider> -->
+			<slider floor="0" ceiling="255" step="1" precision="0" ng-model="userRedValue"></slider>
+		</div>
+		<p style="color:#ffffff">The Red Value is {{userRedValue}}</p>
+		<div id="greenSliderBox">
+			<slider floor="0" ceiling="255" step="1" precision="0" ng-model="userGreenValue"></slider>
+		</div>
+		<p style="color:#ffffff">The Green Value is {{userGreenValue}}</p>
+		<div id="blueSliderBox">
+			<slider floor="0" ceiling="255" step="1" precision="0" ng-model="userBlueValue"></slider>
+		</div>
+		<p style="color:#ffffff">The Blue Value is {{userBlueValue}}</p>
+		<div id="hexInputBox"></div>
+
+    </li>
+	</div>
+</div>
