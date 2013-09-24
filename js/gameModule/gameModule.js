@@ -14,6 +14,9 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 	$scope.greenDiff = 0;
 	$scope.blueDiff = 0;
 
+	$scope.showResults = false;
+	$scope.disabledState = "disabled";
+
 	$scope.startGame = function(value) {
 
 		// var random = Math.floor((Math.random()*255)+1);
@@ -21,17 +24,20 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 		$scope.randomRedValue = Math.floor((Math.random()*255)+1);Math.floor((Math.random()*255)+1);
 		$scope.randomGreenValue = Math.floor((Math.random()*255)+1);
 		$scope.randomBlueValue = Math.floor((Math.random()*255)+1);
+		$scope.disabledState = "";
 	}
 
 	$scope.submitGuess = function() {
 		// console.log('You clicked Submit!');
-		// scope.redDiff = $scope.randomRedValue - $scope.userRedValue;
-		// scope.blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
-		// scope.greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
-		var redDiff = $scope.randomRedValue - $scope.userRedValue;
-		var blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
-		var greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
-		alert('you were this close - red: ' + redDiff + ' green: ' + greenDiff + ' blue: ' + blueDiff);
+		$scope.redDiff = $scope.randomRedValue - $scope.userRedValue;
+		$scope.blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
+		$scope.greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
+		$scope.showResults = true;
+		$scope.disabledState = "disabled";
+		// var redDiff = $scope.randomRedValue - $scope.userRedValue;
+		// var blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
+		// var greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
+		// alert('you were this close - red: ' + redDiff + ' green: ' + greenDiff + ' blue: ' + blueDiff);
 	}
 
 }] );
