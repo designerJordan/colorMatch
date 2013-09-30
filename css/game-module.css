@@ -92,6 +92,11 @@ body, html {
 	text-transform: uppercase;
 }
 
+.button:hover {
+	background: #3E606F;
+	color: #E7E7E7;
+}
+
 #startButton {
 	float: left;
 }
