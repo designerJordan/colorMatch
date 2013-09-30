@@ -8,12 +8,16 @@
 
 	<div id="resultsBox" ng-show="showResults">
 		<h2 class="title">Results</h2>
-		<div>Your guesses were this close:</div>
-		<div>
-			Red: {{redDiff}}<br>
-			Green: {{greenDiff}}<br>
-			Blue: {{blueDiff}}<br>
+		<div id="resultList">
+			<div>Your guesses were this close:</div>
+			<div>
+				Red: {{redDiff}}<br>
+				Green: {{greenDiff}}<br>
+				Blue: {{blueDiff}}<br>
+			</div>
 		</div>
+		<div id="resultScore">{{totalScore}}</div>
+		<div class="button" id="playAgain" ng-click="playAgain()">Play Again</div>
 	</div>
 
 	<div id="buttonsBox">

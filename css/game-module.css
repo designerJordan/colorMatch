@@ -50,19 +50,42 @@ body, html {
 	height: 180px;
 	width: 45%;
 	display: block;
-	position: relative;
-	margin: 14px auto;
-	margin-bottom: -200px;
+	position: absolute;
 	background: rgba(0,0,0,0.7);
 	border: 3px solid #424242;
-	top: -260px;
+	top: 50px;
 	text-align: center;
 	text-transform: uppercase;
+	left: 27.5%;
 }
 
 .title {
 	font-size: 1.7em;
 	line-height: 0.3em;
+}
+
+#resultList {
+	border: 1px solid;
+	width: 60%;
+	margin: 0 3.2%;
+	float: left;
+}
+
+#resultScore {
+	font-size: 3em;
+	display: block;
+	border: 1px solid;
+	width: 30%;
+	float: left;
+}
+
+#playAgain {
+	font-size: 1em;
+	position: absolute;
+	width: 30%;
+	height: 21px;
+	left: 66.3%;
+	top: 7.8em;
 }
 
 

@@ -14,11 +14,12 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 	$scope.greenDiff = 0;
 	$scope.blueDiff = 0;
 
+	$scope.totalScore = 0;
+
 	$scope.showResults = false;
 	$scope.disabledState = "disabled";
 
 	$scope.startGame = function(value) {
-
 		// var random = Math.floor((Math.random()*255)+1);
 		// console.log('You clicked Start!', random);
 		$scope.randomRedValue = Math.floor((Math.random()*255)+1);Math.floor((Math.random()*255)+1);
@@ -32,12 +33,28 @@ GameModule.controller( 'GameModuleCtrl', ['$scope', '$element', '$attrs', functi
 		$scope.redDiff = $scope.randomRedValue - $scope.userRedValue;
 		$scope.blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
 		$scope.greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
+		$scope.matchScore();
 		$scope.showResults = true;
 		$scope.disabledState = "disabled";
 		// var redDiff = $scope.randomRedValue - $scope.userRedValue;
 		// var blueDiff = $scope.randomGreenValue - $scope.userGreenValue;
 		// var greenDiff = $scope.randomBlueValue - $scope.userBlueValue;
 		// alert('you were this close - red: ' + redDiff + ' green: ' + greenDiff + ' blue: ' + blueDiff);
+	}
+	$scope.playAgain = function() {
+		$scope.showResults = false;
+		$scope.userRedValue = 0;
+		$scope.userGreenValue = 0;
+		$scope.userBlueValue = 0;
+		$scope.startGame();
+		$scope.$apply();
+	}
+	$scope.matchScore = function() {
+		var red = Math.abs($scope.redDiff);
+		var green = Math.abs($scope.greenDiff);
+		var blue = Math.abs($scope.blueDiff);
+		$scope.totalScore = 768 - (red + green + blue);
+		$scope.$apply();
 	}
 
 }] );
